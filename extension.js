@@ -3,6 +3,9 @@
 const vscode = require('vscode');
 const fs = require("fs");
 const path = require("path");
+
+let doIT;
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -10,6 +13,13 @@ const path = require("path");
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+
+			// On Acivate, add 'doIT' status bar button
+			doIT = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 2);
+			doIT.text = 'doIT';
+			doIT.command = `extension.CodeGen`;
+			doIT.tooltip = 'doIT on current file';
+			doIT.show();
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
