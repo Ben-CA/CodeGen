@@ -35,6 +35,12 @@
 				"command": "extension.CodeGen",
 				"title": "CodeGen"
 			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets.json"
+			}
 		]
 	},
 	"scripts": {

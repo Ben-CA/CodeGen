@@ -64,21 +64,10 @@ function activate(context) {
 		  if (err) {
 			return console.log(err);
 		  }
-		  fs.writeFile(path.join(folderPath, "app.js"), "", err => {
-			if (err) {
-			  return console.log(err);
-			}
-			fs.writeFile(path.join(folderPath, "app.css"), "", err => {
-			  if (err) {
-				return console.log(err);
-			  }
-			  vscode.window.showWarningMessage("Created base files!");
-			});
-		  });
 		});
 	
 
-
+// vscode.window.showWarningMessage("Created base files!");
 	vscode.window.setStatusBarMessage('Completed', 5000);
 
 // end of code for running this function
