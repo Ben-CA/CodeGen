@@ -3,7 +3,7 @@
 	"displayName": "CodeGen",
 	"description": "Generates lines of code from a given line with placeholders and inserts variables in CSV format. Will generate as many lines as there are CSV variables.",
 	"publisher": "etron",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Ben-CA/CodeGen"
