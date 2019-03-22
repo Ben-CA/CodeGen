@@ -1,7 +1,7 @@
 {
 	"name": "codegen",
 	"displayName": "CodeGen",
-	"description": "Generates lines of code from a given line with variables and CSV info.",
+	"description": "Generates lines of code from a given line with placeholders and inserts variables in CSV format. Will generate as many lines as there are CSV variables.",
 	"publisher": "etron",
 	"version": "0.0.1",
 	"repository": {
@@ -17,7 +17,11 @@
 		"Replace",
 		"Generate",
 		"Code",
-		"Generator"
+		"Generator",
+		"Again & Again",
+		"Power Repeat",
+		"Multiplier",
+		"REGEX"
 	],
 	"engines": {
 		"vscode": "^1.32.0"
@@ -35,12 +39,6 @@
 				"command": "extension.CodeGen",
 				"title": "CodeGen"
 			}
-		],
-		"snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets.json"
-			}
 		]
 	},
 	"scripts": {
@@ -53,8 +51,5 @@
 		"eslint": "^5.13.0",
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
-	},
-	"dependencies": {
-		"@types/jquery": "^3.3.29"
 	}
 }
