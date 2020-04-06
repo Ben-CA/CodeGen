@@ -3,7 +3,8 @@
 	"displayName": "CodeGen",
 	"description": "Generates lines of code from a given line with placeholders and inserts variables in CSV format. Will generate as many lines as there are CSV variables.",
 	"publisher": "etron",
-	"version": "0.0.2",
+	"version": "0.0.3",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Ben-CA/CodeGen"
@@ -46,10 +47,10 @@
 		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"eslint": "^5.13.0",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.17.18",
+		"eslint": "^5.16.0",
+		"typescript": "^3.8.3",
+		"vscode": "^1.1.36"
 	}
 }
